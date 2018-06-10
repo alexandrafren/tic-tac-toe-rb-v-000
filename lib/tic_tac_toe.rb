@@ -59,8 +59,13 @@ def current_player(board)
   end
 end
 
+<<<<<<< HEAD
 def move(board, index, current_player)
   board[index] = current_player
+=======
+def move(board, index, current_player = "X")
+  board[index] = current_player(board)
+>>>>>>> 4d4d4d1932bb7d81ebfc0909cbf90bd171bfcdef
 end
 
 def won?(board)
